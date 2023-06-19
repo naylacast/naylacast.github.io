@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mollys</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<header>
+  <div class="container-hero">
+        <img src="./logo.png" alt="logo">
+  </div>
+
+  <div class="topnav" id="myTopnav">
+    <a href="index.html" class="active">Home</a>
+    <a href="menu.html">Menú</a>
+    <a href="https://api.whatsapp.com/send/?phone=541130323490&text&type=phone_number&app_absent=0">Reservas</a>
+    <a href="donde encontrarnos.html">¿Dónde encontrarnos?</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa-solid fa-bars" style="color: #51371f;"></i>
+    </a>
+  </div>
+  
+</header>
+
+<p> En Molly's nos destacamos por nuestros famosos brunchs y waffles, contamos con gran variedad tanto dulce como salada. ¡Veni a conocernos y a probar lo mejor de Caballito!</p>
+
+<script 
+   src="https://kit.fontawesome.com/1f339016cc.js" crossorigin="anonymous"></script>
+</script>
+
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="./brunch carrousel.jpg" style="width:100%">
+    <div class="text">BRUNCH</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="./waffle carrousel.jpg" style="width:100%">
+    <div class="text">WAFFLES</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="./comida carrousel.jpg" style="width:100%">
+    <div class="text">ALMUERZO</div>
+  </div>
+  
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+  
+  </div>
+  <br>
+  
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+  </div>
+  
+  <script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
+
+<p6>_________________________________________________</p6>
+
+<div class="pedidos">
+  <a href="https://www.pedidosya.com.ar/restaurantes/buenos-aires/mollys-menu"> <img src="./pedidos ya.gif" alt="pedidos ya"></a>
+</div>
+<p7>Pedí delivery</p7>
+<p6>_________________________________________________</p6>
+<div class="horarios">
+<p8>Horario: Martes a Domingos y Feriados de 9 a 20 hs.</p8>
+</div>
+
+<script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
+</body>
+</html>

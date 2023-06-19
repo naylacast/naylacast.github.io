@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mollys</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<header>
+  <div class="container-hero">
+        <img src="./logo.png" alt="logo">
+  </div>
+
+  <div class="topnav" id="myTopnav">
+    <a href="index.html" class="active">Home</a>
+    <a href="menu.html">Menú</a>
+    <a href="https://api.whatsapp.com/send/?phone=541130323490&text&type=phone_number&app_absent=0">Reservas</a>
+    <a href="donde encontrarnos.html">¿Dónde encontrarnos?</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa-solid fa-bars" style="color: #51371f;"></i>
+    </a>
+  </div>
+  
+</header>
+ 
+
+<p4>Menú</p4>
+
+<div class="Menú"> 
+  
+  <div class="row">
+    <div class="column">
+      <div class="card1">
+        <h3>Brunch</h3>
+        <img src="./brunch carrousel.jpg" alt="Brunch">
+        <p9>Brooklyn.............................................13900$</p>
+        <p9>Buenos Aires.......................................11900$</p>
+        <p9>Caballito..............................................10900$</p>
+        <p9>Manhattan............................................13900$</p>
+        <p9>Molly's................................................10900$</p>
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card1">
+        <h3>Waffles</h3>
+        <img src="./waffle carrousel.jpg" alt="waffles">
+        <p9>Americano.............................................2150$</p>
+        <p9>Jamon y Queso.........................................2150$</p>
+        <p9>Pollo Crispy............................................2550$</p>
+        <p9>Avocado Egg...........................................2850$</p>
+        <p9>Napolitano..............................................2150$</p>
+      </div>
+    </div>
+    
+    <div class="column">
+      <div class="card1">
+        <h3>Almuerzo</h3>
+        <img src="./comida carrousel.jpg" alt="almuerzo">
+        <p9>Lomo a la mostaza con puré de papas......4950$</p>
+        <p9>Milanesa de ternera con papas fritas.....3150$</p>
+        <p9>Pollo grillé con puré de calabaza........2900$</p>
+        <p9>Pollo al curry con arroz.................2900$</p>
+        <p9>Salmón grillé con vegetales asados.......5900$</p>
+      </div>
+    </div>
+    
+    <div class="column">
+      <div class="card1">
+        <h3>Bebidas</h3>
+        <img src="./bebidas.jpeg" alt="bebidas">
+        <p9>Milkshake.............................................1300$</p>
+          <p9>Limonada............................................1150$</p>
+          <p9>Café...................................................800$</p>
+          <p9>Submarino............................................1000$</p>
+          <p9>Té......................................................600$</p>
+      </div>
+    </div>
+  </div>
+  
+</div>
+  
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
